@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Meu Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Contato</h1>
+    <p>Fale comigo! 😊</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="artigos.html">Artigos</a>
+    <a href="contato.html" class="ativo">Contato</a>
+  </nav>
+
+  <main>
+    <section>
+      <form id="formContato">
+        <label>Nome:</label><br>
+        <input type="text" name="nome" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Mensagem:</label><br>
+        <textarea name="mensagem" rows="5" required></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="mensagemSucesso" style="display:none; color:green;">Mensagem enviada com sucesso!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Meu Blog. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Script simples de envio fictício
+    document.getElementById('formContato').addEventListener('submit', function(e){
+      e.preventDefault();
+      document.getElementById('mensagemSucesso').style.display = 'block';
+      this.reset();
+    });
+  </script>
+</body>
+</html>
