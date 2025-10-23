@@ -3,10 +3,18 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(180deg, #fce7ef, #e2d4ff);
+
+  background-image: url('pixie.jpg'); /* coloque o caminho da sua imagem aqui */
+  background-size: cover; /* cobre toda a tela */
+  background-position: center;
+  background-attachment: fixed; /* efeito de paralaxe ao rolar */
+
+  /* Gradiente por cima da imagem */
+  background-blend-mode: overlay;
+  background-color: rgba(255, 220, 230, 0.8); /* leve sobreposição rosada */
+
   color: #4a4a4a;
   line-height: 1.7;
-  background-attachment: fixed;
 }
 
 /* Cabeçalho */
@@ -100,3 +108,4 @@ footer {
   margin-top: 40px;
   box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
 }
+
