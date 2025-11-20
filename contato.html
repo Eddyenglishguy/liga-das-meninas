@@ -3,52 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato - Meu Blog</title>
+  <title>Contato - Blog Liga das Meninas</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Contato</h1>
-    <p>Fale comigo! 😊</p>
-  </header>
 
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="sobre.html">Sobre</a>
-    <a href="artigos.html">Artigos</a>
-    <a href="contato.html" class="ativo">Contato</a>
-  </nav>
+<header>
+  <h1>contato</h1>
+</header>
 
-  <main>
-    <section>
-      <form id="formContato">
-        <label>Nome:</label><br>
-        <input type="text" name="nome" required><br><br>
+<aside>
+  <ul>
+    <li><a href="index.html">inicial</a></li>
+    <li><a href="sobre.html">sobre</a></li>
+    <li><a href="artigos.html">artigos</a></li>
+    <li><a class="ativo" href="contato.html">contato</a></li>
+  </ul>
+</aside>
 
-        <label>Email:</label><br>
-        <input type="email" name="email" required><br><br>
+<main>
+  <h2>Fale Conosco</h2>
 
-        <label>Mensagem:</label><br>
-        <textarea name="mensagem" rows="5" required></textarea><br><br>
+  <form id="formContato">
+    <label>Nome:</label><br>
+    <input type="text" name="nome" required><br><br>
 
-        <button type="submit">Enviar</button>
-      </form>
-      <p id="mensagemSucesso" style="display:none; color:green;">Mensagem enviada com sucesso!</p>
-    </section>
-  </main>
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br><br>
 
-  <footer>
-    <p>&copy; 2025 Meu Blog. Todos os direitos reservados.</p>
-  </footer>
+    <label>Mensagem:</label><br>
+    <textarea rows="5" name="mensagem" required></textarea><br><br>
 
-  <script src="script.js"></script>
-  <script>
-    // Script simples de envio fictício
-    document.getElementById('formContato').addEventListener('submit', function(e){
-      e.preventDefault();
-      document.getElementById('mensagemSucesso').style.display = 'block';
-      this.reset();
-    });
-  </script>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <p id="mensagemSucesso" style="color: green; display:none;">Mensagem enviada com sucesso!</p>
+
+</main>
+
+<script>
+  document.getElementById('formContato').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('mensagemSucesso').style.display = "block";
+    this.reset();
+  });
+</script>
+
 </body>
 </html>
