@@ -1,5 +1,5 @@
-/* Fonte bonita e feminina */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+/* Fontes bonitas e femininas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
 
 /* Reset */
 * {
@@ -27,8 +27,12 @@ header {
   align-items: center;
   justify-content: center;
   color: #000;
-  font-size: 1.8rem; /* menor e mais bonito */
+  font-size: 1.8rem;
+  
+  /* Fonte feminina no header */
+  font-family: 'Playfair Display', serif;
   font-weight: 600;
+  
   z-index: 10;
   text-transform: lowercase;
 }
@@ -68,6 +72,7 @@ aside a {
   font-size: 15px;
   font-weight: 600;
   transition: 0.3s;
+  font-family: 'Poppins', sans-serif;
 }
 
 aside a:hover,
@@ -87,12 +92,9 @@ main {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-/* Textos */
+/* Títulos com Playfair Display */
 h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
   font-weight: 600;
 }
 
@@ -109,6 +111,11 @@ h3 {
 
 p {
   margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Responsivo para celular */
